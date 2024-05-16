@@ -28,6 +28,8 @@ redisClient.on("error", (err) => {
   console.log("Error in the Connection"); 
 }); 
 
+const RedisStore = require("connect-redis").default
+
 const mongoUrl = 'mongodb+srv://commercial:05timE2NuctQg0Yy@cluster0.wfto06b.mongodb.net/things?retryWrites=true&w=majority&appName=Cluster0';
 
 const db  = mysql.createPool({
