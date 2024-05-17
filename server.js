@@ -15,9 +15,7 @@ const redis = require('redis');
 const redisClient = redis.createClient({host: 'localhost', // Địa chỉ của Redis server
 port: 6379,} ); 
 
-(async () => { 
-  await redisClient.connect(); 
-})(); 
+
 
 
 redisClient.on("ready", () => { 
